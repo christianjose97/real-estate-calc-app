@@ -1,24 +1,26 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key});
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Real Estate Toolkit'), // Updated app title
+        title: const Text('Real Estate Deal Calculator'), // Updated app title
       ),
+      backgroundColor: const Color.fromARGB(
+          255, 255, 255, 255), // Set the background color here
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(40.0),
               child: Image.asset(
-                'assets/Chris_Rojas_logo.png', // Replace with the path to your logo image
-                width: 100, // Adjust the width of your logo
-                height: 100, // Adjust the height of your logo
+                'assets/Chris_Rojas_Logo.png', // Replace with the path to your logo image
+                width: 200, // Adjust the width of your logo
+                height: 200, // Adjust the height of your logo
               ),
             ),
             Padding(
@@ -60,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.all(20),
-                  primary: Colors.green, // Updated button color
+                  backgroundColor: Colors.green, // Updated button color
                   shape: RoundedRectangleBorder(
                     borderRadius:
                         BorderRadius.circular(12.0), // Rounded corners
@@ -91,7 +93,7 @@ class HomeScreen extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.all(20),
-                  primary: Colors.orange, // Updated button color
+                  backgroundColor: Colors.orange, // Updated button color
                   shape: RoundedRectangleBorder(
                     borderRadius:
                         BorderRadius.circular(12.0), // Rounded corners
